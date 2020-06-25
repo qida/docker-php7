@@ -19,5 +19,5 @@ COPY entrypoint.sh /usr/local/bin/
 
 EXPOSE 80
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash","/usr/local/bin/entrypoint.sh"]
 CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
